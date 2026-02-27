@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="it">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Rubrica di Mattia</title>
+  
+  <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+  integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+  
+  <!-- Il tuo CSS -->
+  <link rel="stylesheet" href="selfwork_rubrica.css">
+</head>
+
+<body>
+  
+  <header class="container py-4">
+    
+    <h1 class="title text-center mb-5">Rubrica di Mattia</h1>
+    
+    <!-- CONTROLLI -->
+    <section class="container my-4">
+      <div class="row g-4 align-items-start">
+        
+        <!-- MOSTRA / NASCONDI -->
+        <article class="col-12 col-md-4">
+          <h3 class="text-center mb-3">Contatti in Rubrica</h3>
+          <p class="helper-text">
+            Questi sono i contatti presenti in Rubrica
+          </p>
+          <button id="showContactsBtn" class="btn btn-custom w-100">
+            Mostra / Nascondi
+          </button>
+        </article>
+        
+        <!-- AGGIUNGI -->
+        <article class="col-12 col-md-4">
+          <h3 class="text-center mb-3">Aggiungi Nuovo Contatto</h3>
+          
+          <div class="mb-2">
+            <input type="text" class="form-control" id="nameInput" placeholder="Nome">
+          </div>
+          
+          <div class="mb-3">
+            <input type="number" class="form-control" id="numberInput" placeholder="Numero">
+          </div>
+          
+          <div class="d-grid gap-2">
+            <button id="addContactsBtn" class="btn btn-custom">Aggiungi</button>
+            <button id="removeContactsBtn" class="btn btn-custom">Rimuovi</button>
+          </div>
+        </article>
+        
+        <!-- MODIFICA -->
+        <article class="col-12 col-md-4">
+          <h3 class="text-center mb-3">Modifica Contatto</h3>
+          
+          <p class="text-muted small mb-3 helper-text">
+            Scrivi il <strong>nome esistente</strong> e il <strong>nuovo numero</strong>, poi clicca Modifica.
+          </p>
+          
+          <button id="modifyContactsBtn" class="btn btn-custom w-100">
+            Modifica
+          </button>
+        </article>
+        
+      </div>
+    </section>
+    
+    <!-- LISTA CONTATTI -->
+    <section class="container my-4">
+      <div class="row justify-content-center">
+        <article class="col-12 col-md-8" id="contactsWrapper"></article>
+      </div>
+    </section>
+    
+  </header>
+  
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+  integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+  crossorigin="anonymous"></script>
+  
+  <!-- FontAwesome -->
+  <script src="https://kit.fontawesome.com/d47eb66075.js" crossorigin="anonymous"></script>
+  
+  <!-- JS -->
+  <script src="selfwork_rubrica.js"></script>
+  
+</body>
+</html>
